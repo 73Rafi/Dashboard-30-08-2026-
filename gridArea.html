@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header,
+        .nav,
+        .main,
+        .sidebar,
+        .advertise,
+        .footer {
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: tomato;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .nav {
+            grid-area: nav;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .advertise {
+            grid-area: advertise;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .container {
+            display: grid;
+            gap:20px;
+            grid-template-areas:
+                "header header header "
+                "nav main sidebar"
+                "nav main advertise"
+                "footer footer footer";
+        }
+
+
+
+
+        @media  screen and (max-width: 576px) {
+            .container {
+                grid-template-areas:
+                    "header"
+                    "nav"
+                    "main"
+                    "sidebar"
+                    "advertise"
+                    "footer";
+            }
+        }
+    </style>
+</head>
+
+<body class="container">
+    <header class="header">
+        <h3>The Header</h3>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a>Nav 1</a></li>
+            <li><a>Nav 2</a></li>
+            <li><a>Nav 3</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <article>
+            <h3>Main Article 1</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores inventore reprehenderit ipsum dolores
+                pariatur provident natus laudantium sunt, reiciendis eligendi nemo quibusdam quia aliquid cupiditate ex
+                repellat aliquam illo facilis.</p>
+        </article>
+        <article>
+            <h3>Main Article 2</h3>
+            <p>Culpa architecto nulla necessitatibus. Delectus blanditiis accusantium esse nemo laboriosam illo eaque
+                nostrum amet voluptatum asperiores nihil libero adipisci qui iure, ex quod ipsam aliquam cum fugiat!
+                Atque, animi quaerat?</p>
+        </article>
+    </main>
+    <div class="sidebar">
+        <h4>Sidebar</h4>
+    </div>
+
+    <div class="advertise">
+        <h4>Advertisement</h4>
+    </div>
+    <footer class="footer">
+        <h3>The footer</h3>
+    </footer>
+</body>
+
+</html>

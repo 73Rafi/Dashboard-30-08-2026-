@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            list-style: none;
+            padding: 10px 2px;
+        }
+
+        ul li a,
+        p {
+            text-decoration: none;
+            color: #6A6A62;
+            font-size: 18px;
+
+        }
+
+        .box1 {
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid #6A6A62;
+            padding: 10px;
+        }
+
+        .box {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 10px
+        }
+        .container{
+            display:grid;
+            grid-template-columns: 10vw 1fr;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar" style="width:20vw;background-color:#1A1A18">
+            <div style="display:flex;align-items:center;gap:150px">
+                <div
+                    style="height: 20px;width:20px;background-color:#E84528;color:white;justify-content:center;display:flex;align-items:center;margin-left:10px">
+                    P</div>
+                <p style="color:white;font-size:20px">Practico</p>
+            </div>
+            <hr>
+            <ul >
+                <p style="padding:10px 2px">MENU</p>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Project</a></li>
+                <li><a href="">Tasks</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">Settings</a></li>
+            </ul>
+            <hr style="margin-top:1100px">
+            <div style="display:flex;gap:10px">
+                <div
+                    style="height:35px;width:35px;background-color: #E84528;border-radius:50%;color:white;display:flex;justify-content:center;align-items:center;margin-left:10px">
+                    AR</div>
+                <div>
+                    <p style="color:white;padding:0px;margin:0px">Arif Rahman</p>
+                    <p style="color:#6A6A62;padding:0px;margin:0px">arif@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+        <header class="header" style="background-color: #DDDDD5;">
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:10px">
+                <div style="margin-left:10px">
+                    <h2 style="margin-bottom: 0px;">Dashboard</h2>
+                    <p style="color:#6A6A62;padding:0px;margin:0px">Thursday, 28 Agust 2026</p>
+                </div>
+                <div style="display:flex;gap:5px">
+                    <input type="text" placeholder="Search anything..."
+                        style="width:250px;padding:10px;border-radius: 5px;border:1px solid #6A6A62;">
+                    <button
+                        style="color:white;background-color: #E84528;padding:10px;width:100px;border:none;border-radius:5px">+New</button>
+                </div>
+            </div>
+            <hr style="margin-top:20px">
+            <p style="padding-left:32px">OVERVIEW</p>
+            <div class="box"style="padding-left:32px">
+                <div class="box1">
+                    <p>Active Projects</p>
+                    <h1>24</h1>
+                    <p style="color:green">+3 this week</p>
+                </div>
+                <div class="box1">
+                    <p>Tasks Done</p>
+                    <h1>182</h1>
+                    <p style="color:green">+18 this week</p>
+                </div>
+                <div class="box1">
+                    <p>Team Members</p>
+                    <h1>9</h1>
+                    <p style="color:red">-9 this week</p>
+                </div>
+                <div class="box1">
+                    <p>Hours Logged</p>
+                    <h1>1,340</h1>
+                    <p style="color:green">+240 this week</p>
+                </div>
+
+            </div>
+
+
+            <div style="display:grid;grid-template-columns:2.5fr 0.5fr;gap:20px;justify-content:center;align-items:center;padding-left:25px;margin-top:20px">
+                <div >
+                    <div style="display:flex;justify-content:space-between;align-items:center;">
+                        <p style="margin-left:10px">PROJECTS</p>
+                        <p style="color:#E84528">View all</p>
+                    </div>
+                    <div style="background-color: white;border-radius:10px;padding:10px;margin-left:10px;box-shadow:0 0 10px gray">
+                        <div style="display:grid; grid-template-columns:2.2fr 1.4fr 2.2fr 0.8fr 0.8fr;">
+                            <p>PROJECT</p>
+                            <p>STATUS</p>
+                            <p>PROGRESS</p>
+                            <p>DUE</p>
+                            <p>LEAD</p>
+                        </div>
+                        <hr>
+                        <div
+                            style="display:grid; grid-template-columns:2.2fr 1.4fr 2.2fr 0.8fr 0.8fr;justify-content:space-between;align-items:center;padding:10px">
+                            <h3>Website Redesign</h3>
+                            <div
+                                style="background-color:#DBEAFE ;color:#1447E6;width:100px;height: 30px;border-radius:10px;display:flex;justify-content: center;align-items:center;">
+                                In Progress</div>
+                            <input type="range" min="0" max="100" value="72" style="width:70%;accent-color:red">
+                            <p>Sep 12</p>
+                            <p>Arif H.</p>
+                        </div>
+                        <hr>
+                        <div
+                            style="display:grid; grid-template-columns:2.2fr 1.4fr 2.2fr 0.8fr 0.8fr;justify-content:space-between;align-items:center;padding:10px">
+                            <h3>Website Redesign</h3>
+                            <div
+                                style="background-color:#DBEAFE ;color:#1447E6;width:100px;height: 30px;border-radius:10px;display:flex;justify-content: center;align-items:center;">
+                                In Progress</div>
+                            <input type="range" min="0" max="100" value="72" style="width:70%;accent-color:red">
+                            <p>Sep 12</p>
+                            <p>Arif H.</p>
+                        </div>
+                        <hr>
+                        <div
+                            style="display:grid; grid-template-columns:2.2fr 1.4fr 2.2fr 0.8fr 0.8fr;justify-content:space-between;align-items:center;padding:10px">
+                            <h3>Website Redesign</h3>
+                            <div
+                                style="background-color:#DBEAFE ;color:#1447E6;width:100px;height: 30px;border-radius:10px;display:flex;justify-content: center;align-items:center;">
+                                In Progress</div>
+                            <input type="range" min="0" max="100" value="72" style="width:70%;accent-color:red">
+                            <p>Sep 12</p>
+                            <p>Arif H.</p>
+                        </div>
+                        <hr>
+                        <div
+                            style="display:grid; grid-template-columns:2.2fr 1.4fr 2.2fr 0.8fr 0.8fr;justify-content:space-between;align-items:center;padding:10px">
+                            <h3>Api</h3>
+                            <div
+                                style="background-color:#F3F4F6 ;color:#6A7282;width:100px;height: 30px;border-radius:10px;display:flex;justify-content: center;align-items:center;">
+                                Pending</div>
+                            <input type="range" min="0" max="100" value="12" style="width:70%;accent-color:red">
+                            <p>Oct 20</p>
+                            <p>Nadia R.</p>
+                        </div>
+                        <hr>
+                        <div
+                            style="display:grid; grid-template-columns:2.2fr 1.4fr 2.2fr 0.8fr 0.8fr;justify-content:space-between;align-items:center;padding:10px">
+                            <h3>Analytics Dashboard</h3>
+                            <div
+                                style="background-color:#DCFCE7 ;color:#008236;width:50px;height: 30px;border-radius:10px;display:flex;justify-content: center;align-items:center;">
+                                Done</div>
+                            <input type="range" min="0" max="100" value="100" style="width:70%;accent-color:#008236">
+                            <p>Aug 15</p>
+                            <p>Rafi I.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p >ADD TEAM MEMBER</p>
+                    <form style="background-color: white;border-radius:10px;padding:10px;box-shadow:0 0 10px gray;margin-bottom:6px;display:grid;justify-content:center;margin-right:10px;">
+                        <div style="padding:10px">
+                            <p style="margin:0px;padding:0px;font-size:16px;margin-top:10px;margin-bottom: 2px;">Full
+                                Name</p>
+                            <input type="text" name="name"
+                                style="width:298px;height: 40px;border-radius:5px;border:1px solid gray;"
+                                placeholder="Sadia Karim">
+                        </div>
+                        <div style="padding:10px">
+                            <p style="margin:0px;padding:0px;font-size:16px;margin-top:10px;margin-bottom: 2px;">Email
+                            </p>
+                            <input type="email" name="email"
+                                style="width:298px;height: 40px;border-radius:5px;border:1px solid gray;"
+                                placeholder="sadia@gmail.com">
+                        </div>
+                        <div style="padding:10px">
+                            <p style="margin:0px;padding:0px;font-size:16px;margin-top:10px;margin-bottom: 2px;">Role
+                            </p>
+                            <select style="width:298px;height: 40px;border-radius:5px;border:1px solid gray;">
+                                <option>Developer</option>
+                            </select>
+                        </div>
+                        <div style="padding:10px">
+                            <p style="margin:0px;padding:0px;font-size:16px;margin-top:10px;margin-bottom: 2px;">Notes
+                            </p>
+                            <textarea style="width: 100%;height: 78px;"
+                                placeholder="Add a short note about this member"></textarea>
+                        </div>
+                        <div style="display: grid;gap:20px;padding-bottom:20px">
+                            <button
+                                style="color:white;background-color: #E84528;padding:10px;width:298px;border:none;border-radius:5px;margin-left:10px;margin-top:15px">Add
+                                Member</button>
+
+                            <button style="background-color:#DDDDD5;padding:10px;width:298px;border:none;border-radius:5px;margin-left:10px;margin-top:10px" >Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div>
+                <p  style="padding-left: 32px;">RECENT ACTIVITY</p>
+                <div style="background-color: white;border-radius: 10px;box-shadow:0 0 10px gray;margin-left:32px;margin-right:10px">
+                    <div style="display: flex;align-items:center;justify-content:space-between;padding:10px">
+                        <div style="display:flex;align-items: center;gap:10px">
+                            <div style="height: 30px;width: 30px;background-color: #FFF0ED;border-radius: 50%;border:none;color:#E84528;display: flex;justify-content: center;align-items: center;">TA</div>
+                            <div><p>Tanvir M. pushed 3 commits to <span style="color:#E84528">design-system</span></p></div>
+                        </div>
+                        <div>
+                            <p>2 min ago</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="display: flex;align-items:center;justify-content:space-between;padding:10px">
+                        <div style="display:flex;align-items: center;gap:10px;">
+                            <div style="height: 30px;width: 30px;background-color: #FFF0ED;border-radius: 50%;border:none;color:#E84528;display: flex;justify-content: center;align-items: center;">TA</div>
+                            <div><p>Sadia K. moved task to Review in <span style="color:#E84528">Mobile App v2</span></p></div>
+                        </div>
+                        <div>
+                            <p>14 min ago</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="display: flex;align-items:center;justify-content:space-between;padding:10px">
+                        <div style="display:flex;align-items: center;gap:10px">
+                            <div style="height: 30px;width: 30px;background-color: #FFF0ED;border-radius: 50%;border:none;color:#E84528;display: flex;justify-content: center;align-items: center;">TA</div>
+                            <div><p>Nadia R. opened a PR in <span style="color:#E84528">API Integration</span></p></div>
+                        </div>
+                        <div>
+                            <p>1 hr ago</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="display: flex;align-items:center;justify-content:space-between;padding:10px">
+                        <div style="display:flex;align-items: center;gap:10px">
+                            <div style="height: 30px;width: 30px;background-color: #FFF0ED;border-radius: 50%;border:none;color:#E84528;display: flex;justify-content: center;align-items: center;">TA</div>
+                            <div><p>Rafi I. closed project <span style="color:#E84528">Analytics Dashboard</span></p></div>
+                        </div>
+                        <div>
+                            <p>3 hr ago</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="display: flex;align-items:center;justify-content:space-between;padding:10px">
+                        <div style="display:flex;align-items: center;gap:10px">
+                            <div style="height: 30px;width: 30px;background-color: #FFF0ED;border-radius: 50%;border:none;color:#E84528;display: flex;justify-content: center;align-items: center;">TA</div>
+                            <div><p>Arif H. added comment in<span style="color:#E84528">Website Reading</span></p></div>
+                        </div>
+                        <div>
+                            <p>5 hr ago</p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </header>
+    </div>
+</body>
+
+</html>
